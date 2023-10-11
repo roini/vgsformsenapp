@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Contact form to email.css">
+	<link rel="stylesheet" href="modal.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body onload="load()">
+       <!--მოდალური გვერდი-->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <span style="color:red;">გაფრთხილება!!!</span>
+                <p>
+                  საიტი მონაცემების დაზუსტებისთვის ითხოვს <strong>თქვენი ლოკაციის(ადგილმდებარეობის) დადგენას!!! </strong>
+                  <u style="color:red;">ეს უკანასკნელი კი გვეხმარება,რომ უმოკლეს პერიოდში დაზუსტებით გითხრათ გვაქვს,
+                  თუ არა თქვენს სოფელში/დასახლებაში/ქალაქში/ქუჩაზე დაფარვის ზონა</u> 
+                  თუკი მისამართზე არ იმყოფებით უბრალოდ გათიშეთ ეს ფანჯარა,
+                  ხოლო თუ განაცხადს ავსებთ თქვენი საცხოვრებელი სახლიდან,მაშინ დააწკაპეთ ღილაკს 
+                  <button onclick="getLocation()" id="enableLocate" class="btn">ლოკაციის დადგენა </button>-ს და შემდეგ ზემოთ გამოსულ ფანჯარაში <strong>allow</strong> ღილაკს
+                </p>
+                <img src="./allow.png">
+            </div>
+        </div>
+      <!--მოდალური გვერდი-->
+		<!--start ფორმის კონტეინერი-->
+		<div class="container">
+			<h2>ონლაინ შეკვეთა</h2>
+			     <p id="demo">test</p>
+			<form onsubmit="emailSend(); reset(); return false;">
+				<input type="text" id="name" placeholder="თქვენი სახელი" name="name" required>
+				<input type="text" id="name" placeholder="თქვენი გვარი" name="name" required>
+				<input type="text" id="name" placeholder="პირადი N" name="name" required>
+				<input type="text" id="phone" placeholder="თქვენი მობილური" name="phone" required>
+				<input type="email" id="email" placeholder="თქვენი ელფოსტა" name="email" required>
+				<!--start აირჩიეთ რაიონი-->
+				<select class="combo">
+					<option>აირჩიეთ რაიონი:</option>
+					<option>აბაშის რაიონი</option>
+					<option>სენაკის რაიონი</option>
+					<option>მარტვილის რაიონი</option>
+					<option>ხონის რაიონო</option>
+					<option>ახალციხის რაიონი</option>
+					<option>სამტრედიის რაიონი</option>
+					<option>ლანჩხუთის რაიონი</option>
+					<option>ჩოტახაურის რაიონი</option>
+					<option>წყალტუბოს რაიონი</option>
+				</select>
+				<!--end აირჩიეთ რაიონი-->
+				<select class="combo">
+					<option>აირჩიეთ ქალაქი</option>
+					<option>აბაშის</option>
+					<option>სენაკი</option>
+					<option>მარტვილი</option>
+					<option>ხონი</option>
+					<option>ახალციხე</option>
+					<option>სამტრედია</option>
+					<option>ვანი</option>
+					<option>ლანჩხუთი</option>
+					<option>ჩოტახაური</option>
+					<option>წყალტუბო</option>
+				</select>
+				<!--start საიდან გაიგეთ ჩვენს შესახებ-->
+				<select class="combo">
+					<option>საიდან გაიგეთ ჩვენს შესახებ</option>
+					<option>მეგობრისაგან</option>
+					<option>თქვენი თანამშრომლებისაგან</option>
+					<option>თქვენი ვებგვერდიდან</option>
+					<option>სოციალური ქსელებიდან</option>
+				</select>
+				<!--end საიდან გაიგეთ ჩვენს შესახებ-->
+				<!--startაქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?-->
+				<select class="combo">
+					<option>აქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?</option>
+					<option>პირველად ვაყენებ ინტერტეტს</option>
+					<option>დიახ,მქონდა ინტერნეტი,მარამ გადავწყვიტე პროვაიდერის შეცვლა</option>
+				</select>
+				<!--end აქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?-->
+				<!--start რატომ გადაწყვიტეთ პროვაიდერის შეცვლა-->
+				<select class="combo">
+					<option>რატომ გადაწყვიტეთ პროვაიდერის შეცვლა?</option>
+					<option>ტარიფი გააძვირეს</option>
+					<option>ინტერნეტის სიჩქარე დაბალია</option>
+					<option>ხშირია ინტერნეტის წყვეტა</option>
+					<option>პრობლემებზე რეაგირეხა არ ხდება,ან ხდება დაგვიანებით</option>
+				</select>
+				<!--end რატომ გადაწყვიტეთ პროვაიდერის შეცვლა-->
+				<button type="submit" class="btn">შეკვეთა</button>
+			</form>
+		</div> 
+		<!--end ფორმის კონტეინერი-->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="Contact form to email.js"></script>
+		<script src="modal.js"></script>
+		<script src="location.js"></script>
+		</script>
+</body>
+</html>
