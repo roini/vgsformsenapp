@@ -1,5 +1,6 @@
-*{	box-sizing: border-box;	font-family: 'poppins', sans-serif;}body{
-	margin: 0;	padding: 0;	min-height: 100vh;	display: flex;	align-items: center;	justify-content: center;	background-color: #32cd9c;}.container{<!DOCTYPE html><html><head>	<link rel="stylesheet" href="Contact form to email.css">	<link rel="stylesheet" href="modal.css">	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*{	box-sizing: border-box;	font-family: 'poppins', sans-serif;}
+body{margin: 0;	padding: 0;	min-height: 100vh;	display: flex;	align-items: center;	justify-content: center;	
+     background-color: #32cd9c;}.container{
 	width: 500px;	background-color: white;	border-radius: 25px;	box-shadow: 5px 5px #FFB75E;	padding: 20px;	text-align: center;}.container input,.combo{	width: 100%;	padding: 10px;	border: none;	border-bottom: 2px solid #777777;	margin-bottom: 20px;	font-size: 16px;	outline: none;}.btn{	border: none !important;	cursor: pointer;	background-color: #32cd9c;	margin: 15px 0;	font-size: 16px;	width: 100%;	padding: 14px;}.btn:hover{	background-color: #1f7d5f;	color: white;}/*media*/
 /* Extra small devices (phones, 600px and down) */@media only screen and (max-width: 600px) { }
 /* Small devices (portrait tablets and large phones, 600px and up) */@media only screen and (min-width: 600px) { }
