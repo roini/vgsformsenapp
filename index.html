@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 </head>
-<body onload="load()">
+<body onload="load();">
        <!--მოდალური გვერდი-->
         <div id="myModal" class="modal">
             <!-- Modal content -->
@@ -35,36 +35,26 @@
 				<input type="text" id="name" placeholder="პირადი N" name="name" required>
 				<input type="text" id="phone" placeholder="თქვენი მობილური" name="phone" required>
 				<input type="email" id="email" placeholder="თქვენი ელფოსტა" name="email" required>
+				<!--start is opt-->
+                <select class="combo" id="typeInt" onchange="changedTypeInt();">
+					<option  value="აირჩიეთ ინტერნეტ ტექნოლოგია">აირჩიეთ ინტერნეტ ტექნოლოგია</option>
+					<option value="უკაბელო ინტერნეტი(საჰაერო)">უკაბელო ინტერნეტი(საჰაერო)</option>
+					<option value="ოპტიკური ინტერნეტი">ოპტიკური ინტერნეტი</option>
+					
+				</select>
+				<!-- end is opt-->
 				<!--start აირჩიეთ რაიონი-->
-				<select class="combo">
-					<option>აირჩიეთ რაიონი:</option>
-					<option>აბაშის რაიონი</option>
-					<option>სენაკის რაიონი</option>
-					<option>მარტვილის რაიონი</option>
-					<option>ხონის რაიონო</option>
-					<option>ახალციხის რაიონი</option>
-					<option>სამტრედიის რაიონი</option>
-					<option>ლანჩხუთის რაიონი</option>
-					<option>ჩოტახაურის რაიონი</option>
-					<option>წყალტუბოს რაიონი</option>
+				<select class="combo" id="regions">
+					<option  id="regionsOp" value="noValInt">აირჩიეთ რაიონი:</option>
+					
 				</select>
 				<!--end აირჩიეთ რაიონი-->
-				<select class="combo">
-					<option>აირჩიეთ ქალაქი</option>
-					<option>აბაშის</option>
-					<option>სენაკი</option>
-					<option>მარტვილი</option>
-					<option>ხონი</option>
-					<option>ახალციხე</option>
-					<option>სამტრედია</option>
-					<option>ვანი</option>
-					<option>ლანჩხუთი</option>
-					<option>ჩოტახაური</option>
-					<option>წყალტუბო</option>
+				<select class="combo" id="CityAndVilages" omchange="ChangeCityAndVilages();">
+					<option  id="cityAndVilagesOp" value="noValInt">აირჩიეთ დასახლებული პუნქტი</option>
 				</select>
 				<!--start საიდან გაიგეთ ჩვენს შესახებ-->
-				<select class="combo">
-					<option>საიდან გაიგეთ ჩვენს შესახებ</option>
+				<select class="combo" id="saidan">
+					<option  value="noValInt">საიდან გაიგეთ ჩვენს შესახებ:</option>
 					<option>მეგობრისაგან</option>
 					<option>თქვენი თანამშრომლებისაგან</option>
 					<option>თქვენი ვებგვერდიდან</option>
@@ -72,15 +62,15 @@
 				</select>
 				<!--end საიდან გაიგეთ ჩვენს შესახებ-->
 				<!--startაქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?-->
-				<select class="combo">
-					<option>აქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?</option>
+				<select class="combo" id="alreadyus">
+					<option  value="noValInt">აქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?</option>
 					<option>პირველად ვაყენებ ინტერტეტს</option>
 					<option>დიახ,მქონდა ინტერნეტი,მარამ გადავწყვიტე პროვაიდერის შეცვლა</option>
 				</select>
 				<!--end აქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?-->
 				<!--start რატომ გადაწყვიტეთ პროვაიდერის შეცვლა-->
-				<select class="combo">
-					<option>რატომ გადაწყვიტეთ პროვაიდერის შეცვლა?</option>
+				<select class="combo" id="why">
+					<option  value="noValInt">რატომ გადაწყვიტეთ პროვაიდერის შეცვლა?</option>
 					<option>ტარიფი გააძვირეს</option>
 					<option>ინტერნეტის სიჩქარე დაბალია</option>
 					<option>ხშირია ინტერნეტის წყვეტა</option>
@@ -97,5 +87,6 @@
 		<script src="modal.js"></script>
 		<script src="location.js"></script>
 		</script>
+		<script src="comboboxesjs.js"></script>
 </body>
 </html>
