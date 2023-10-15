@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Contact form to email.css">
+	<link rel="stylesheet" href="modal.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	 
+</head>
+<body onload="load();">
+       <!--მოდალური გვერდი-->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <span style="color:red;">გაფრთხილება!!!</span>
+                <p>
+                  საიტი მონაცემების დაზუსტებისთვის ითხოვს <strong>თქვენი ლოკაციის(ადგილმდებარეობის) დადგენას!!! </strong>
+                  <u style="color:red;">ეს უკანასკნელი კი გვეხმარება,რომ უმოკლეს პერიოდში დაზუსტებით გითხრათ გვაქვს,
+                  თუ არა თქვენს სოფელში/დასახლებაში/ქალაქში/ქუჩაზე დაფარვის ზონა</u> 
+                  თუკი მისამართზე არ იმყოფებით უბრალოდ გათიშეთ ეს ფანჯარა,
+                  ხოლო თუ განაცხადს ავსებთ თქვენი საცხოვრებელი სახლიდან,მაშინ დააწკაპეთ ღილაკს 
+                  <button onclick="getLocation()" id="enableLocate" class="btn">ლოკაციის დადგენა </button>-ს და შემდეგ ზემოთ გამოსულ ფანჯარაში <strong>allow</strong> ღილაკს
+                </p>
+                <img src="./allow.png">
+            </div>
+        </div>
+      <!--მოდალური გვერდი-->
+		<!--start ფორმის კონტეინერი-->
+		<div class="container" id="message">
+			<h2>ონლაინ შეკვეთა</h2>
+			     <p id="demo">test</p>
+			<form action="#">
+				<input type="text" id="name" placeholder="თქვენი სახელი" name="name" required>
+				<input type="text" id="name" placeholder="თქვენი გვარი" name="name" required>
+				<input type="text" id="name" placeholder="პირადი N" name="name" required>
+				<input type="text" id="phone" placeholder="თქვენი მობილური" name="phone" required>
+				<input type="email" id="replyto" placeholder="თქვენი ელფოსტა" name="email" required>
+				<!--start is opt-->
+                <select class="combo" id="typeInt" onchange="changedTypeInt();">
+					<option  value="აირჩიეთ ინტერნეტ ტექნოლოგია">აირჩიეთ ინტერნეტ ტექნოლოგია</option>
+					<option value="უკაბელო ინტერნეტი(საჰაერო)">უკაბელო ინტერნეტი(საჰაერო)</option>
+					<option value="ოპტიკური ინტერნეტი">ოპტიკური ინტერნეტი</option>
+					
+				</select>
+				<!-- end is opt-->
+				<!--start აირჩიეთ რაიონი-->
+				<select class="combo" id="regions" onchange="ChangeregionsOP();">
+					<option  id="regionsOp" value="noValInt">აირჩიეთ რაიონი:</option>
+					
+				</select>
+				<!--end აირჩიეთ რაიონი-->
+				<select class="combo" id="CityAndVilages" >
+					<option  id="cityAndVilagesOp" value="noValInt">აირჩიეთ დასახლებული პუნქტი</option>
+				</select>
+				<!--start საიდან გაიგეთ ჩვენს შესახებ-->
+				<select class="combo" id="saidan">
+					<option  value="noValInt">საიდან გაიგეთ ჩვენს შესახებ:</option>
+					<option>მეგობრისაგან</option>
+					<option>თქვენი თანამშრომლებისაგან</option>
+					<option>თქვენი ვებგვერდიდან</option>
+					<option>სოციალური ქსელებიდან</option>
+				</select>
+				<!--end საიდან გაიგეთ ჩვენს შესახებ-->
+				<!--startაქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?-->
+				<select class="combo" id="alreadyus">
+					<option  value="noValInt">აქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?</option>
+					<option>პირველად ვაყენებ ინტერტეტს</option>
+					<option>დიახ,მქონდა ინტერნეტი,მარამ გადავწყვიტე პროვაიდერის შეცვლა</option>
+				</select>
+				<!--end აქამდე თუ გისარგებლიათ რომელიმე ინტერნეტ პროვაიდერით?-->
+				<!--start რატომ გადაწყვიტეთ პროვაიდერის შეცვლა-->
+				<select class="combo" id="why">
+					<option  value="noValInt">რატომ გადაწყვიტეთ პროვაიდერის შეცვლა?</option>
+					<option>ტარიფი გააძვირეს</option>
+					<option>ინტერნეტის სიჩქარე დაბალია</option>
+					<option>ხშირია ინტერნეტის წყვეტა</option>
+					<option>პრობლემებზე რეაგირეხა არ ხდება,ან ხდება დაგვიანებით</option>
+				</select>
+				<!--end რატომ გადაწყვიტეთ პროვაიდერის შეცვლა-->
+			
+
+
+				<button type="submit" class="btn" onclick="sendMail();">შეკვეთა</button>
+			</form>
+		</div> 
+		<!--end ფორმის კონტეინერი-->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="Contact form to email.js"></script>
+		<script src="modal.js"></script>
+		<script src="location.js"></script>
+		</script>
+		<script src="comboboxesjs.js"></script>
+		<script src="emailsenderAPI.js"></script>
+		
+		
+</body>
+</html>
