@@ -215,6 +215,7 @@ function ChangeCityAndVilages() {
     for (let i = 0; i < regionWithVilagesWifi[0].villages.length; i++) {
         let village = regionWithVilagesWifi[0].villages[i];
         let option1 = document.createElement('option');
+        console.log(vilages);
         option1.value = village[i];
         option1.text = village[i];
         selectViaCity.appendChild(option1);
