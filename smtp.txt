@@ -1,8 +1,0 @@
-mail.sendergiorgi777@gmail.com
-Password
-C26C80B9B5F940392DA8B56188E4B283E3EF
-Copy
-Server
-smtp.elasticemail.com
-Port
-2525
