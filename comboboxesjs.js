@@ -208,7 +208,7 @@ function changedTypeInt() {
 }
 /** end --->  internet technology change event**/
 /** end --->  region change event**/
-function regions() {
+function ChangeregionsOP() {
      let regionOpt=document.getElementById('regions').value;
      for (let i = 0; i < regionWithVillagesWifi.length; i++) {
      let city = regionWithVillagesWifi[i].city;
