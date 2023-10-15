@@ -1,0 +1,33 @@
+    function sendMail(){
+        //----------------------------------------------------------------------
+            ///ცვლადების შემოტანა
+                var sendername=document.getElementById("fname")+' '+document.getElementById("lname");
+                var piradinomeri=document.getElementById("pn");
+                var phoneNumber=document.getElementById("phone");
+                var replyto=document.getElementById("replyto");
+                
+	  const htmlString ='';
+	   var div=document.getElementById("div");
+        (function(){
+          emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
+        })();
+        var to='r.giorgadze1996@gmail.com'
+		var subject='ონლაინ შეკვეთა!!!';
+		var message='test';
+        var params = {
+          sendername: document.querySelector("#sendername").value,
+          to:to,
+          subject: subject,
+          replyto: document.querySelector("#replyto").value,
+          message: message,
+        };
+
+        var serviceID = "service_xghwsfp"; // Email Service ID
+        var templateID = "template_1l1bhvw"; // Email Template ID
+
+        emailjs.send(serviceID, templateID, params)
+        .then( res => {
+            alert("Email sent successfully!!")
+        })
+        .catch();
+    }

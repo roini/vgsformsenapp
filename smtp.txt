@@ -1,0 +1,34 @@
+ზომის მიცემა ცვლადისთვის
+
+const widthValue = '400px';
+const heightValue = '200px';
+
+// Get the element you want to change
+const element = document.getElementById('div');
+
+// Set the width and height
+element.style.width = widthValue;
+element.style.height = heightValue;
+
+ბექგრაუნდის ფონის მიცემა ცვლადისთვის
+ const grauColor = 'gray';
+
+		// Get the element you want to change the background color of
+		const element = document.getElementById('div');
+        // Set the background color
+		element.style.backgroundColor = bgColoრ
+		
+		
+		
+ცარჩოს მიცემა ცვლადისთვი
+
+// Define variables for border properties
+const borderWidth = '2px';
+const borderStyle = 'solid';
+const borderColor = 'blue';
+
+// Get the element you want to change
+const element = document.getElementById('div');
+
+// Set the border properties
+element.style.border = `${borderWidth} ${borderStyle} ${borderColor}`;
