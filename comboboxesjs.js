@@ -209,5 +209,14 @@ function changedTypeInt() {
 /** end --->  internet technology change event**/
 /** end --->  region change event**/
 function regions() {
-     let regionOpt=document.getElementById('typeInt').value;
+     let regionOpt=document.getElementById('regions').value;
+     for (let i = 0; i < data.length; i++) {
+          console.log("City:", data[i].city);
+          console.log("Villages:");
+          for (let j = 0; j < data[i].villages.length; j++) {
+            console.log(data[i].villages[j]);
+          }
+ 
+}
+
 }
