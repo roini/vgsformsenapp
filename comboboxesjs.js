@@ -209,22 +209,5 @@ function changedTypeInt() {
 /** end --->  internet technology change event**/
 /** end --->  region change event**/
 function ChangeCityAndVilages() {
-   let selectViaCity=document.getElementById('CityAndVilages');
-   if(typeOfIntTech=='უკაბელო ინტერნეტი(საჰაერო)' || selectViaCity=='სამტრედიის რაიონი')
-   {
-    for (let i = 0; i < data.length; i++) {
-      console.log("City:", data[i].city);
-      console.log("Villages:");
-      for (let j = 0; j < data[i].villages.length; j++) {
-        console.log(data[i].villages[j]);
-      }
-      console.log("\n"); // Separate each city's output for better readability
-    }
-    }
-    
-
-   }
-   else{
-
-   }
+  alert('hi');
 }
