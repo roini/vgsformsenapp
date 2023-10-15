@@ -212,13 +212,14 @@ function ChangeCityAndVilages() {
    let selectViaCity=document.getElementById('CityAndVilages');
    if(typeOfIntTech=='უკაბელო ინტერნეტი(საჰაერო)' || selectViaCity=='სამტრედიის რაიონი')
    {
-    for (let i = 0; i < regionWithVilagesWifi[0].villages.length; i++) {
-        let village = regionWithVilagesWifi[0].villages[i];
-        let option1 = document.createElement('option');
-        console.log(vilages);
-        option1.value = village[i];
-        option1.text = village[i];
-        selectViaCity.appendChild(option1);
+    for (let i = 0; i < data.length; i++) {
+      console.log("City:", data[i].city);
+      console.log("Villages:");
+      for (let j = 0; j < data[i].villages.length; j++) {
+        console.log(data[i].villages[j]);
+      }
+      console.log("\n"); // Separate each city's output for better readability
+    }
     }
     
 
