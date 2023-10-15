@@ -208,6 +208,6 @@ function changedTypeInt() {
 }
 /** end --->  internet technology change event**/
 /** end --->  region change event**/
-function ChangeCityAndVilages() {
-  alert('hi');
+function regions() {
+     let regionOpt=document.getElementById('typeInt').value;
 }
