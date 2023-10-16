@@ -22,8 +22,8 @@
           message: message,
         };
 
-        var serviceID = "service_xghwsfp"; // Email Service ID
-        var templateID = "template_1l1bhvw"; // Email Template ID
+        var serviceID ="service_o9flavu";//Email Service ID
+        var templateID ="template_efrimtd"; // Email Template ID
 
         emailjs.send(serviceID, templateID, params)
         .then( res => {
