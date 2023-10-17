@@ -15,7 +15,7 @@
 		var subject='ონლაინ შეკვეთა!!!';
 		var message='test';
         var params = {
-          sendername: document.querySelector("#sendername").value,
+          sendername:sendername;
           to:to,
           subject: subject,
           replyto: document.querySelector("#replyto").value,
