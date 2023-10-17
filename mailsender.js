@@ -7,13 +7,7 @@
                 var piradinomeri= document.getElementById("piradinomeri").value;
                 var phoneNumber=document.getElementById("phone").value;
                 var replyto = document.getElementById("replyto").value;
-                var typeInt= document.getElementById("typeInt").value;
-                var regions = document.getElementById("regions").value;
-                var CityAndVilages = document.getElementById("CityAndVilages").value;
-                var saidan = document.getElementById("saidan").value;
-                var alreadyus = document.getElementById("alreadyus").value;
-                var why = document.getElementById("why").value;
-                var geocoord = document.ElementById("geocoord").value;
+                
         (
 	function(){emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
 	   })();
