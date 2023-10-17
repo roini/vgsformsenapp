@@ -37,7 +37,7 @@ function sendMail() {
         why: why
     };
 
-    alert(sendername);
+    alert(geocoord);
 
     var serviceID = "service_o9flavu"; // Email Service ID
     var templateID = "template_efrimtd"; // Email Template ID
