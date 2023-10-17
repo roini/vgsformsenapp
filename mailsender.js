@@ -3,7 +3,7 @@
             ///ცვლადების შემოტანა
                 var firstname= document.getElementById("fname").value;
 	        var lastname=document.getElementById("lname").value;
-	        var sendername=firstname + ' ' +lastname;
+	        var sendername=firstname + ' ' + lastname ;
                 var piradinomeri=document.getElementById("pn");
                 var phoneNumber=document.getElementById("phone");
                 var replyto=document.getElementById("replyto");
