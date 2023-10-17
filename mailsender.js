@@ -4,8 +4,8 @@
                 var firstname= document.getElementById("fname").value;
 	        var lastname=document.getElementById("lname").value;
 	        var sendername=firstname + ' ' + lastname ;
-                var piradinomeri=document.getElementById("pn");
-                var phoneNumber=document.getElementById("phone");
+                var piradinomeri=document.getElementById("pn").valur;
+                var phoneNumber=document.getElementById("phone").value;
                 var replyto=document.getElementById("replyto");
                 
 	  
@@ -21,8 +21,8 @@
           to:to,
           subject: subject,
           replyto:replyto,
-          piradiN:piradinomeri,
-	  phoneNumber:phoneNumber,
+          piradinomeri:piradinomeri,
+	  phonenumber:phoneNumber,
 		
         };
         console.log(sendername);
