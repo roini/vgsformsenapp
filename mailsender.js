@@ -12,7 +12,7 @@ function sendMail() {
     var saidan = document.getElementById("saidan").value;
     var alreadyus = document.getElementById("alreadyus").value;
     var why = document.getElementById("why").value;
-    var geolocation= document.getElementById("geolocation").value;    
+    var geolocation = document.getElementById("geolocation").value;    
     (function() {
         emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
     })();
@@ -34,7 +34,7 @@ function sendMail() {
         saidan: saidan,
         alreadyus: alreadyus,
         why: why,
-geolocation:geolocation
+       geolocation:geolocation,
 };
 
     alert(geolocation);   
