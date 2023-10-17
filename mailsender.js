@@ -22,6 +22,9 @@
           subject: subject,
           replyto:replyto,
           message: message,
+	  piradiN:piradinomeri,
+	  phoneNumber;phoneNumber
+		
         };
         console.log(sendername);
         var serviceID ="service_o9flavu";//Email Service ID
