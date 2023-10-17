@@ -21,8 +21,7 @@
           to:to,
           subject: subject,
           replyto:replyto,
-          message: message,
-	  piradiN:piradinomeri,
+           piradiN:piradinomeri,
 	  phoneNumber:phoneNumber
 		
         };
