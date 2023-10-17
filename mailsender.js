@@ -34,8 +34,7 @@ function sendMail() {
         cityAndVillages: cityAndVillages,
         saidan: saidan,
         alreadyus: alreadyus,
-        why: why,
-        geocoord:geocoord
+        why: why
     };
 
     alert(sendername);
