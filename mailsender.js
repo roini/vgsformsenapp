@@ -48,7 +48,7 @@ console.log(formattedDateTime);
         alreadyus: alreadyus,
         why: why,
         geocoord: geocoord,
-        time: time;
+        time: time
     };
 
     console.log(sendername);
