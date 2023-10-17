@@ -9,7 +9,7 @@
                 var replyto = document.getElementById("replyto").value;
 	    var typeInt = document.getElementById("typeInt").value;
 	    var regions = document.getElementById("regions").value;
-	    var CityAndVilages = document.getElementById("CityAndVilages").value;
+	    var cityandvilages = document.getElementById("CityAndVilages").value;
 	    var saidan = document.getElementById("saidan").value;
 	    var alreadyus = document.getElementById("alreadyus").value;
 	    var why = document.getElementById("why").value;
@@ -30,7 +30,7 @@
 	phonenumber:phoneNumber,
 	typeInt:typeInt,
 	    regions:regions,
-	    CityAndVilages:CityAndVilages,
+	    cityandvilages:cityandvilages,
 	    saidan:saidan,
 	    alreadyus:alreadyus,
 	    why:why,
