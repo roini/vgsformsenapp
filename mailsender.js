@@ -1,7 +1,7 @@
     function sendMail(){
         //----------------------------------------------------------------------
             ///ცვლადების შემოტანა
-                var sendername=document.getElementById("fname")+' '+document.getElementById("lname");
+                var sendername= document.getElementById("fname")+' '+document.getElementById("lname");
                 var piradinomeri=document.getElementById("pn");
                 var phoneNumber=document.getElementById("phone");
                 var replyto=document.getElementById("replyto");
