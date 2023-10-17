@@ -17,7 +17,7 @@ var saidan = getElementById("saidan").value;
 var alreadyus = getElementById("alreadyus").value;
 
 var why = getElementById("why").value;
-
+var geocoord = documentElementById("geocoord").value;
 (function(){
           emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
         })();
@@ -37,8 +37,8 @@ CityAndVilages : CityAndVilages,
 saidan : saidan,
 alreadyus : alreadyus,
 why : why,
-
-typeInt:	typeInt  
+typeInt:	typeInt,
+geocoord : geocoord
 
 
 };
