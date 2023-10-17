@@ -14,7 +14,8 @@
                 var alreadyus = document.getElementById("alreadyus").value;
                 var why = document.getElementById("why").value;
                 var geocoord = document.ElementById("geocoord").value;
-(function(){emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
+        (
+	function(){emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
 	   })();
         var to='r.giorgadze1996@gmail.com'
 	var subject='ონლაინ შეკვეთა!!!';
