@@ -7,7 +7,7 @@
                 var replyto=document.getElementById("replyto");
                 
 	  const htmlString ='';
-	   var div=document.getElementById("div");
+	   
         (function(){
           emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
         })();
