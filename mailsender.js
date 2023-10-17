@@ -23,7 +23,7 @@
           replyto:replyto,
           message: message,
 	  piradiN:piradinomeri,
-	  phoneNumber;phoneNumber
+	  phoneNumber:phoneNumber
 		
         };
         console.log(sendername);
