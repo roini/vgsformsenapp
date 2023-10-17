@@ -13,7 +13,19 @@ function sendMail() {
     var alreadyus = document.getElementById("alreadyus").value;
     var why = document.getElementById("why").value;
     var geocoord = document.getElementById("geocoord").value;
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+    const year = date.getFullYear();
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
 
+    return `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`;
+}
+
+const now = new Date();
+const formattedDateTime = formatDateTime(now);
+const time = formattedDateTime;
+console.log(formattedDateTime);
     (function() {
         emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
     })();
@@ -35,7 +47,8 @@ function sendMail() {
         saidan: saidan,
         alreadyus: alreadyus,
         why: why,
-        geocoord: geocoord
+        geocoord: geocoord,
+        time: time;
     };
 
     console.log(sendername);
