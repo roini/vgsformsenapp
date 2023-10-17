@@ -18,7 +18,7 @@
           sendername:sendername,
           to:to,
           subject: subject,
-          replyto: document.querySelector("#replyto").value,
+          replyto:replyto,
           message: message,
         };
 
