@@ -38,7 +38,7 @@ function sendMail() {
         geocoord:geocoord
     };
 
-    console.log(sendername);
+    alert(sendername);
 
     var serviceID = "service_o9flavu"; // Email Service ID
     var templateID = "template_efrimtd"; // Email Template ID
