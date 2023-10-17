@@ -12,8 +12,7 @@ function sendMail() {
     var saidan = document.getElementById("saidan").value;
     var alreadyus = document.getElementById("alreadyus").value;
     var why = document.getElementById("why").value;
-    var geocoord = document.getElementById("geocoord").value;
-    
+    var geolocation= document.getElementById("geolocation").value,    
     (function() {
         emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
     })();
@@ -34,12 +33,13 @@ function sendMail() {
         cityAndVillages: cityAndVillages,
         saidan: saidan,
         alreadyus: alreadyus,
-        why: why
-    };
+        why: why,
+geolocation:geolocation
+};
 
-    alert(geocoord);
+    alert(geolocation);   
 
-    var serviceID = "service_o9flavu"; // Email Service ID
+ var serviceID = "service_o9flavu"; // Email Service ID
     var templateID = "template_efrimtd"; // Email Template ID
 
     emailjs.send(serviceID, templateID, params)
