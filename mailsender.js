@@ -4,7 +4,7 @@
                 var firstname= document.getElementById("fname").value;
 	        var lastname=document.getElementById("lname").value;
 	        var sendername=firstname + ' ' + lastname ;
-                var piradinomeri=document.getElementById("pn").valur;
+                var piradinomeri=document.getElementById("piradinomeri").valur;
                 var phoneNumber=document.getElementById("phone").value;
                 var replyto=document.getElementById("replyto");
                 
