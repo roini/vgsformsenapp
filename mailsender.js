@@ -27,14 +27,7 @@
         replyto:replyto,
         piradinomeri:piradinomeri,
 	phonenumber:phoneNumber,
-	typeInt:typeInt,
-	regions:regions,
-	CityAndVilages:CityAndVilages,
-	saidan:saidan,
-	alreadyus:alreadyus,
-	why:why,
-	typeInt:typeInt,
-	geocoord:geocoord
+	
 };
         console.log(sendername);
         var serviceID ="service_o9flavu";//Email Service ID
