@@ -21,8 +21,8 @@
           to:to,
           subject: subject,
           replyto:replyto,
-           piradiN:piradinomeri,
-	  phoneNumber:phoneNumber
+          piradiN:piradinomeri,
+	  phoneNumber:phoneNumber,
 		
         };
         console.log(sendername);
