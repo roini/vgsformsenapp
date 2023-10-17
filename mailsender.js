@@ -6,7 +6,7 @@
 	        var sendername=firstname + ' ' + lastname ;
                 var piradinomeri= document.getElementById("piradinomeri").value;
                 var phoneNumber=document.getElementById("phone").value;
-                var replyto=document.getElementById("replyto");
+                var replyto=document.getElementById("replyto").value;
                 
 	  
 	   
