@@ -1,6 +1,6 @@
  //ლოკაციის დადგენის სკრიპტი
 
-    const x = document.getElementById("geocoord");
+    const x = document.getElementById("geolocation");
 
     function getLocation() {
             if (navigator.geolocation) {
