@@ -1,4 +1,4 @@
-const x = ' ';
+var x = ' ';
 
 function getLocation() {
   if (navigator.geolocation) {
