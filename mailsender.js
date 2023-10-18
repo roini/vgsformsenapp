@@ -1,23 +1,21 @@
+const x = ' ';
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+//ლოკაციის დადგენის სკრიპტი
  //ლოკაციის დადგენის სკრიპტი
 
-    ver geolocation = ' ';
-
-    function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else { 
-                geolocation = "Geolocation is not supported by this browser.";
-            }
-        }
-    function showPosition(position) {
-            let lat= position.coords.latitude;
-            let lon=position.coords.longitude;
-            geolocation = lat + ' ' + lon ; 
-            modal.style.display = "none";
-    }
-//ლოკაციის დადგენის სკრიპტი
-
+    
 
 
 function sendMail() {
