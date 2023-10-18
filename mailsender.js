@@ -1,3 +1,25 @@
+
+ //ლოკაციის დადგენის სკრიპტი
+
+    const x = '';
+
+    function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+    function showPosition(position) {
+            let lat= position.coords.latitude;
+            let lon=position.coords.longitude;
+            x = lat + ' ' + lon ; 
+            modal.style.display = "none";
+    }
+//ლოკაციის დადგენის სკრიპტი
+
+
+
 function sendMail() {
     // Variable input extraction
     var firstname = document.getElementById("fname").value;
@@ -12,7 +34,7 @@ function sendMail() {
     var saidan = document.getElementById("saidan").value;
     var alreadyus = document.getElementById("alreadyus").value;
     var why = document.getElementById("why").value;
-    var geolokacia = document.getElementById("geolokacia").value;    
+    var geolokacia = x;   
     (function() {
         emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
     })();
