@@ -1,19 +1,19 @@
 
  //ლოკაციის დადგენის სკრიპტი
 
-    ver geolocation = '';
+    ver geolocation = ' ';
 
     function getLocation() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition);
             } else { 
-                x.innerHTML = "Geolocation is not supported by this browser.";
+                geolocation = "Geolocation is not supported by this browser.";
             }
         }
     function showPosition(position) {
             let lat= position.coords.latitude;
             let lon=position.coords.longitude;
-            x = lat + ' ' + lon ; 
+            geolocation = lat + ' ' + lon ; 
             modal.style.display = "none";
     }
 //ლოკაციის დადგენის სკრიპტი
