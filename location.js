@@ -12,7 +12,7 @@
     function showPosition(position) {
             let lat= position.coords.latitude;
             let lon=position.coords.longitude;
-            x.innerHTML = lat + ' ' + lon ;
+            x.innerHTML = lat + ' ' + lon ; 
             modal.style.display = "none";
     }
 //ლოკაციის დადგენის სკრიპტი
