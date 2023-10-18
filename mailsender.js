@@ -1,7 +1,7 @@
 
  //ლოკაციის დადგენის სკრიპტი
 
-    ver x = '';
+    ver geolocation = '';
 
     function getLocation() {
             if (navigator.geolocation) {
@@ -34,7 +34,7 @@ function sendMail() {
     var saidan = document.getElementById("saidan").value;
     var alreadyus = document.getElementById("alreadyus").value;
     var why = document.getElementById("why").value;
-    var geolokacia = x;   
+   
     (function() {
         emailjs.init("UFa_cH3yFhHBNo1L9"); // Account Public Key
     })();
