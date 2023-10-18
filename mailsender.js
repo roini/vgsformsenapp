@@ -1,7 +1,7 @@
 
  //ლოკაციის დადგენის სკრიპტი
 
-    const x = '';
+    ver x = '';
 
     function getLocation() {
             if (navigator.geolocation) {
