@@ -56,7 +56,7 @@ function sendMail() {
         saidan: saidan,
         alreadyus: alreadyus,
         why: why,
-       geolocation:geolocation,
+       geolokacia:geolocation,
 };
 
     alert(geolocation);
