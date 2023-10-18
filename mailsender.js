@@ -11,6 +11,7 @@ function getLocation() {
 function showPosition(position) {
   x = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
+alert(x);
 }
 //ლოკაციის დადგენის სკრიპტი
  //ლოკაციის დადგენის სკრიპტი
