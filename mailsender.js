@@ -34,10 +34,12 @@ function sendMail() {
         saidan: saidan,
         alreadyus: alreadyus,
         why: why,
-       geolocation:geolocation,
+       
+geolocation:geolocation,
 };
 
-    alert(geolocation);   
+    alert(geolocation);
+   
 
  var serviceID = "service_o9flavu"; // Email Service ID
     var templateID = "template_efrimtd"; // Email Template ID
