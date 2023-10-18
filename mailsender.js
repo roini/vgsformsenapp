@@ -1,24 +1,3 @@
-var x = ' ';
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-alert(x);
-}
-//ლოკაციის დადგენის სკრიპტი
- //ლოკაციის დადგენის სკრიპტი
-
-    
-
-
 function sendMail() {
     // Variable input extraction
     var firstname = document.getElementById("fname").value;
